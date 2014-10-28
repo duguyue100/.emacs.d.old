@@ -1,0 +1,6 @@
+[submodule "site-lisp/emacs-for-python"]
+	path = site-lisp/emacs-for-python
+	url = https://github.com/gabrielelanaro/emacs-for-python
+[submodule "site-lisp/markdown-mode"]
+	path = site-lisp/markdown-mode
+	url = git://jblevins.org/git/markdown-mode.git
