@@ -3,7 +3,7 @@ DGYEMACSCONF
 
 This repo maintains my Emacs configuration.
 
-_Hopefully this is the last time_
+_Hopefully this is the last time, And works universally_
 
 ## Setup
 
