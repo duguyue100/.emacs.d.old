@@ -9,7 +9,8 @@
 ; load path management
 
 (add-to-list 'load-path "~/.emacs.d/site-lisp")
-(add-to-list 'load-path "~/.emacs.d/site-lisp/color-theme")
+(add-to-list 'load-path "~/.emacs.d/site-lisp/color-theme") ; load color theme
+(add-to-list 'load-path "~/.emacs.d/site-lisp/markdown-mode")
 
 ; start at full screen
 
@@ -18,7 +19,7 @@
 
 ; font configuration
 
-; (add-to-list 'default-frame-alist '(font .  "Courier 10 Pitch-14" ))
+(add-to-list 'default-frame-alist '(font .  "Courier 10 Pitch-15" ))
 
 ; choose theme
 
@@ -26,3 +27,21 @@
 (color-theme-initialize)
 (load-file "~/.emacs.d/site-lisp/color-theme/themes/color-theme-cobalt.el")
 (color-theme-cobalt)
+
+; enable line numbers
+
+(global-linum-mode t)
+
+;;; ------ Language Settings ------ ;;;
+
+; Python support
+
+(load-file "~/.emacs.d/site-lisp/emacs-for-python/epy-init.el")
+
+; Markdown support
+
+(autoload 'markdown-mode "markdown-mode"
+   "Major mode for editing Markdown files" t)
+(add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
