@@ -14,12 +14,20 @@
 
 ; start at full screen
 
+(tool-bar-mode -1)
+(setq frame-resize-pixelwise t)
 (custom-set-variables
  '(initial-frame-alist (quote ((fullscreen . maximized)))))
 
 ; font configuration
 
-(add-to-list 'default-frame-alist '(font .  "Courier 10 Pitch-15" ))
+(if (eq system-type "gnu/linux")
+    (add-to-list 'default-frame-alist '(font .  "Courier 10 Pitch-15" ))
+)
+
+(if (eq system-type 'darwin)
+    (add-to-list 'default-frame-alist '(font .  "Courier-15" ))
+)
 
 ; choose theme
 
