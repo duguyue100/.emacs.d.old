@@ -19,9 +19,19 @@
 (custom-set-variables
  '(initial-frame-alist (quote ((fullscreen . maximized)))))
 
+; set keys setting
+
+(if (eq system-type 'darwin)
+    ;; set keys for Apple keyboard, for emacs in OS X
+    ;(setq mac-command-modifier 'meta) ; make cmd key do Meta
+    (setq mac-option-modifier 'meta) ; make opt key do Super
+    (setq mac-control-modifier 'control) ; make Control key do Control
+    ;(setq ns-function-modifier 'hyper)  ; make Fn key do Hyper
+)
+
 ; font configuration
 
-(if (eq system-type "gnu/linux")
+(if (eq system-type 'gnu/linux)
     (add-to-list 'default-frame-alist '(font .  "Courier 10 Pitch-15" ))
 )
 
