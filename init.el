@@ -13,7 +13,7 @@
 (concat
  "/usr/texbin" ":"
 
-(getenv "PATH")))
+ (getenv "PATH")))
 
 ; load path management
 
@@ -21,10 +21,12 @@
 (add-to-list 'load-path "~/.emacs.d/site-lisp/color-theme") ; load color theme
 (add-to-list 'load-path "~/.emacs.d/site-lisp/markdown-mode")
 (add-to-list 'load-path "~/.emacs.d/site-lisp/Emacs-langtool") ; load for grammer check
+(add-to-list 'load-path "~/.emacs.d/site-lisp/writegood-mode") ; write good mode
 
-; start at full screen
+; start at full screen and turn of toolbar and menu bar
 
 (tool-bar-mode -1)
+(scroll-bar-mode -1)
 (setq frame-resize-pixelwise t)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -46,6 +48,12 @@
     ;(setq ns-function-modifier 'hyper)  ; make Fn key do Hyper
 )
 
+(global-set-key (kbd "RET") 'newline-and-indent)
+(global-set-key (kbd "C-;") 'comment-or-uncomment-region)
+(global-set-key (kbd "M-/") 'hippie-expand)
+(global-set-key (kbd "C-+") 'text-scale-increase)
+(global-set-key (kbd "C--") 'text-scale-decrease)
+
 ; font configuration
 
 (if (eq system-type 'gnu/linux)
@@ -55,6 +63,40 @@
 (if (eq system-type 'darwin)
     (add-to-list 'default-frame-alist '(font .  "Courier-15" ))
 )
+
+; marking text
+
+(delete-selection-mode t)
+(transient-mark-mode t)
+(setq x-select-enable-clipboard t)
+
+; setting tabs
+
+(setq tab-width 2
+      indent-tabs-mode nil)
+
+; yes and no simplify
+
+(defalias 'yes-or-no-p 'y-or-n-p)
+
+; setting aspell for flyspell
+
+(setq flyspell-issue-welcome-flag nil)
+(if (eq system-type 'darwin)
+    (setq-default ispell-program-name "/opt/local/bin/aspell")
+  (setq-default ispell-program-name "/usr/bin/aspell"))
+(setq-default ispell-list-command "list")
+
+;; enable flyspell to all modes
+(add-hook 'text-mode-hook 'flyspell-mode)
+(add-hook 'prog-mode-hook 'flyspell-prog-mode)
+
+; setup writegood mode
+
+(require 'writegood-mode)
+(global-set-key "\C-cg" 'writegood-mode)
+(global-set-key "\C-c\C-gg" 'writegood-grade-level)
+(global-set-key "\C-c\C-ge" 'writegood-reading-ease)
 
 ; choose theme
 
@@ -107,6 +149,7 @@
 (setq-default TeX-master nil)
 (add-hook 'LaTeX-mode-hook 'visual-line-mode)
 (add-hook 'LaTeX-mode-hook 'flyspell-mode)
+(add-hook 'LaTeX-mode-hook 'writegood-mode)
 (add-hook 'LaTeX-mode-hook 'LaTeX-math-mode)
 (add-hook 'LaTeX-mode-hook 'turn-on-reftex)
 (setq reftex-plug-into-AUCTeX t)
