@@ -23,6 +23,13 @@
 (add-to-list 'load-path "~/.emacs.d/site-lisp/Emacs-langtool") ; load for grammer check
 (add-to-list 'load-path "~/.emacs.d/site-lisp/writegood-mode") ; write good mode
 
+; set up MELPA
+
+(require 'package)
+(add-to-list 'package-archives
+             '("melpa" . "http://melpa.org/packages/") t)
+(package-initialize)
+
 ; start at full screen and turn of toolbar and menu bar
 
 (tool-bar-mode -1)
@@ -182,3 +189,8 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+; JavaScript support
+
+(add-hook 'js-mode-hook 'js2-minor-mode)
+(add-hook 'js2-mode-hook 'ac-js2-mode)
