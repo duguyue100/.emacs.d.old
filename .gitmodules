@@ -10,3 +10,6 @@
 [submodule "site-lisp/Emacs-langtool"]
 	path = site-lisp/Emacs-langtool
 	url = https://github.com/mhayashi1120/Emacs-langtool
+[submodule "site-lisp/writegood-mode"]
+	path = site-lisp/writegood-mode
+	url = https://github.com/bnbeckwith/writegood-mode
