@@ -4,3 +4,9 @@
 [submodule "site-lisp/markdown-mode"]
 	path = site-lisp/markdown-mode
 	url = git://jblevins.org/git/markdown-mode.git
+[submodule "Emacs-langtool"]
+	path = Emacs-langtool
+	url = https://github.com/mhayashi1120/Emacs-langtool
+[submodule "site-lisp/Emacs-langtool"]
+	path = site-lisp/Emacs-langtool
+	url = https://github.com/mhayashi1120/Emacs-langtool

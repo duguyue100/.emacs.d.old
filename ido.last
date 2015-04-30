@@ -1,0 +1,95 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/dgyHome/Documents/workspace/dlworkshop/materials/slides/" . "getting_started/")
+ ("/Users/dgyHome/Documents/workspace/dlworkshop/materials/" . "slides/")
+ ("/Users/dgyHome/Documents/workspace/dlworkshop/" . "materials/")
+ ("/" . "home/")
+ ("/Users/" . "dgyHome/")
+ ("/Users/dgyHome/Documents/latexspace/" . "conceptor-paper/")
+ ("/Users/dgyHome/" . "Documents/")
+ ("/Users/dgyHome/Documents/workspace/duguyue100.github.io/" . "_posts/")
+ ("/Users/dgyHome/Documents/workspace/" . "duguyue100.github.io/")
+ ("/Users/dgyHome/Documents/" . "workspace/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/dgyHome/Documents/workspace/duguyue100.github.io/_posts/"
+ "/Users/dgyHome/Documents/workspace/dlworkshop/materials/slides/theano_crash/"
+ "/Users/dgyHome/Documents/workspace/dlworkshop/materials/slides/getting_started/"
+ "/Users/dgyHome/Documents/workspace/dlworkshop/materials/slides/machine_learning_basics/"
+ "/Users/dgyHome/Documents/workspace/dlworkshop/materials/slides/"
+ "/Users/dgyHome/Documents/workspace/dlworkshop/materials/slides/python_for_computing/"
+ "/Users/dgyHome/Documents/workspace/duguyue100.github.io/"
+ "/Users/dgyHome/Documents/workspace/dlworkshop/.git/info/"
+ "/Users/dgyHome/.emacs.d/"
+ "/Users/dgyHome/Documents/workspace/duguyue100.github.io/dldemo/"
+ "/Users/dgyHome/Documents/latexspace/conceptor-paper/"
+ "/Users/dgyHome/Documents/latexspace/generalize-elm/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "2015-04-29-tut-rnn.md"
+ "2015-04-29-tut-convnet.md"
+ "2015-04-29-tut-autoencoder.md"
+ "2015-04-24-ref-learning-deep-learning.md"
+ "2015-04-29-tut-svm-softmax.md"
+ "2015-04-29-tut-mlp.md"
+ "theano_crash_course.tex"
+ "introduction.tex"
+ "machine_learning_basics.tex"
+ "dlworkshopref.bib"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/dgyHome/Documents/workspace/duguyue100.github.io/_posts/" (21824 56073 0 0) "2015-04-29-tut-svm-softmax.md~" "2015-04-29-tut-svm-softmax.md" "2015-04-29-tut-mlp.md~" "2015-04-29-tut-mlp.md" "2015-04-29-tut-convnet.md" "2015-04-29-tut-autoencoder.md~" "2015-04-29-tut-autoencoder.md" "2015-04-28-tut-dl-basics.md~" "2015-04-28-tut-dl-basics.md" "2015-04-26-journal-unix-haters.md~" "2015-04-26-journal-unix-haters.md" "2015-04-25-tut-convnetjs.md~" "2015-04-25-tut-convnetjs.md" "2015-04-24-ref-learning-deep-learning.md~" "2015-04-24-ref-learning-deep-learning.md" "2015-04-22-cs-setup-emacs.md~" "2015-04-22-cs-setup-emacs.md" "2015-04-16-neuron.md" "../" "./")
+
+ ("/Users/dgyHome/Documents/workspace/dlworkshop/materials/slides/theano_crash/" (21824 55613 0 0) "theanoqanda.jpg" "theano_crash_course.tex" "theano_crash_course.pdf" "theano_crash_course.fdb_latexmk" "auto/" ".DS_Store" "../" "./")
+
+ ("/Users/dgyHome/Documents/workspace/dlworkshop/materials/slides/" (21824 49640 0 0) "theano_crash/" "python_for_computing/" "machine_learning_basics/" "getting_started/" "dlworkshopref.bib~" "dlworkshopref.bib" "auto/" ".DS_Store" "../" "./")
+
+ ("/Users/dgyHome/.emacs.d/" (21823 30386 0 0) "update-all.sh" "tutorial/" "site-lisp/" "README.md" "LICENSE" "init.el" "ido.last~" "ido.last" "eproject.lst" "elpa/" "auto-save-list/" "ac-comphist.dat" ".gitmodules" ".git/" "../" "./")
+
+ ("/Users/dgyHome/Documents/workspace/dlworkshop/materials/slides/getting_started/" (21824 48148 0 0) "mnist.png" "introduction.tex~" "introduction.tex" "introduction.pyg" "introduction.pdf" "introduction.fdb_latexmk" "cifar10.png" "auto/" "ai_jokes.jpg" ".DS_Store" "../" "./")
+
+ ("/Users/dgyHome/Documents/workspace/dlworkshop/materials/slides/machine_learning_basics/" (21824 48233 0 0) "machine_learning_logo.png" "machine_learning_basics.vrb" "machine_learning_basics.tex~" "machine_learning_basics.tex" "machine_learning_basics.pyg" "machine_learning_basics.pdf" "machine_learning_basics.fdb_latexmk" "auto/" "../" "./")
+
+ ("/Users/dgyHome/Documents/workspace/dlworkshop/.git/info/" (21822 2029 0 0) "exclude~" "exclude" "../" "./")
+
+ ("/Users/dgyHome/Documents/workspace/dlworkshop/materials/slides/python_for_computing/" (21822 2172 0 0) "ubuntulogo.png" "qanda.pdf" "python_for_computing.vrb" "python_for_computing.tex~" "python_for_computing.tex" "python_for_computing.pyg" "python_for_computing.pdf" "python_for_computing.fdb_latexmk" "pydev_logo.png" "nvidia_tesla.png" "eclipse_logo.png" "aws_logo.png" "auto/" "anaconda_logo.png" ".DS_Store" "../" "./")
+
+ ("/Users/dgyHome/Documents/workspace/duguyue100.github.io/" (21823 7030 0 0) "res/" "README.md" "index.md" "images/" "dldemo/" "css/" "CNAME" "bin/" "about.md" "_posts/" "_layouts/" "_includes/" "_config.yml" ".gitignore" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/dgyHome/" (21822 59602 0 0) "Public/" "Pictures/" "Music/" "Movies/" "Library/" "Google Drive/" "Downloads/" "Documents/" "Desktop/" "Applications/" "anaconda/" ".Trash/" ".sh_history" ".profile.macports-saved_2015-04-19_at_20:38:26" ".profile-anaconda.bak" ".profile" ".matplotlib/" ".latexmkrc" ".languagetool.cfg" ".gitconfig" ".FontForge/" ".emacs.d/" ".eclipse/" ".DS_Store" ".cups/" ".continuum/" ".config/" ".CFUserTextEncoding" ".bash_history" ".astropy/" "../" "./")
+
+ ("/Users/dgyHome/Documents/workspace/dlworkshop/.git/" (21821 42454 0 0) "refs/" "packed-refs" "objects/" "logs/" "info/" "index" "hooks/" "HEAD" "description" "config" "../" "./")
+
+ ("/Users/dgyHome/Documents/workspace/dlworkshop/materials/" (21821 42664 0 0) "slides/" "notes/" ".DS_Store" "../" "./")
+
+ ("/Users/dgyHome/Documents/workspace/dlworkshop/" (21821 42658 0 0) "README.md" "materials/" "LICENSE" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/dgyHome/Documents/workspace/dlworkshop/materials/slides/python_computing/" (21821 42661 0 0) "../" "./")
+
+ ("/Users/dgyHome/Documents/workspace/" (21821 42447 0 0) "duguyue100.github.io/" "draw_conceptors/" "dlworkshop/" "convnetjs/" ".metadata/" ".DS_Store" "../" "./")
+
+ ("/Users/dgyHome/Documents/workspace/duguyue100.github.io/dldemo/" (21819 27134 0 0) "script/" "convnetjsdemo.html" "convnetjs/" ".DS_Store" "../" "./")
+
+ ("/Users/dgyHome/Documents/latexspace/generalize-elm/" (21815 2118 0 0) "nips15submit_e.sty" "IEEEtran.cls" "generalize-elm.tex~" "generalize-elm.tex" "generalize-elm.synctex.gz" "generalize-elm.pdf" "generalize-elm.out" "generalize-elm.log" "generalize-elm.fls" "generalize-elm.fdb_latexmk" "generalize-elm.aux" "auto/" ".DS_Store" "../" "./")
+
+ ("/Users/dgyHome/Documents/latexspace/conceptor-paper/" (21816 29134 0 0) "nips15submit_e.sty" "mnist_results.eps" "mnist_results-eps-converted-to.pdf" "IEEEtran.cls" "conceptoref.bib" "conceptor.tex~" "conceptor.tex" "conceptor.synctex.gz" "conceptor.pdf" "conceptor.out" "conceptor.log" "conceptor.fls" "conceptor.fdb_latexmk" "conceptor.blg" "conceptor.bbl" "conceptor.aux" "cifar10_results.eps" "cifar10_results-eps-converted-to.pdf" "cifar100_super_results.eps" "cifar100_super_results-eps-converted-to.pdf" "cifar100_sub_results.eps" "cifar100_sub_results-eps-converted-to.pdf" "auto/" ".DS_Store" "../" "./")
+
+ ("/home/" (21816 19213 94268 0) "../" "./")
+
+ ("/Users/" (21811 33074 0 0) "Shared/" "Guest/" "dgyHome/" ".localized" "../" "./")
+
+ ("/Users/dgyHome/Documents/latexspace/" (21814 27231 0 0) "LanguageTool-2.9/" "generalize-elm/" "conceptor-paper/" ".DS_Store" "../" "./")
+
+ ("/Users/dgyHome/Documents/" (21811 52603 0 0) "workspace/" "Microsoft User Data/" "latexspace/" ".localized" ".DS_Store" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
