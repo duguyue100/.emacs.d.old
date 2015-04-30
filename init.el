@@ -11,7 +11,7 @@
 (getenv "PATH")
  (setenv "PATH"
 (concat
- "/usr/texbin" ":"
+ "/usr/texbin:/usr/local/bin" ":"
 
  (getenv "PATH")))
 
