@@ -82,6 +82,10 @@
 (setq tab-width 2
       indent-tabs-mode nil)
 
+; set electric-pair-mode
+
+(electric-pair-mode 1)
+
 ; yes and no simplify
 
 (defalias 'yes-or-no-p 'y-or-n-p)
