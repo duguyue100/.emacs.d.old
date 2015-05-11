@@ -22,6 +22,7 @@
 (add-to-list 'load-path "~/.emacs.d/site-lisp/markdown-mode")
 (add-to-list 'load-path "~/.emacs.d/site-lisp/Emacs-langtool") ; load for grammer check
 (add-to-list 'load-path "~/.emacs.d/site-lisp/writegood-mode") ; write good mode
+(add-to-list 'load-path "~/.emacs.d/site-lisp/exec-path-from-shell")
 
 ; set up MELPA
 
@@ -29,6 +30,12 @@
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.org/packages/") t)
 (package-initialize)
+
+; set up shell support
+
+(require 'exec-path-from-shell)
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize))
 
 ; start at full screen and turn of toolbar and menu bar
 
@@ -136,11 +143,6 @@
 ; Python support
 
 (load-file "~/.emacs.d/site-lisp/emacs-for-python/epy-init.el")
-(add-hook 'python-mode-hook
-      (lambda ()
-        (setq indent-tabs-mode t)
-        (setq tab-width 2)
-        (setq python-indent 2)))
 
 ; Markdown support
 

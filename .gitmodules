@@ -13,3 +13,6 @@
 [submodule "site-lisp/writegood-mode"]
 	path = site-lisp/writegood-mode
 	url = https://github.com/bnbeckwith/writegood-mode
+[submodule "site-lisp/exec-path-from-shell"]
+	path = site-lisp/exec-path-from-shell
+	url = https://github.com/purcell/exec-path-from-shell
