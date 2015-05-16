@@ -138,6 +138,12 @@
                                 "EN_QUOTES"))
 (setq langtool-mother-tongue "en")
 
+; set up mac dictionary
+
+(if (eq system-type 'darwin)
+    (global-set-key (kbd "C-c d") 'osx-dictionary-search-pointer)
+  (global-set-key (kbd "C-c i") 'osx-dictionary-search-input))
+
 ;;; ------ Language Settings ------ ;;;
 
 ; Python support
