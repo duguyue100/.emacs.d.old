@@ -104,6 +104,7 @@
     (setq-default ispell-program-name "/opt/local/bin/aspell")
   (setq-default ispell-program-name "/usr/bin/aspell"))
 (setq-default ispell-list-command "list")
+(global-set-key (kbd "C-c r") 'ispell-word)
 
 ;; enable flyspell to all modes
 (add-hook 'text-mode-hook 'flyspell-mode)
